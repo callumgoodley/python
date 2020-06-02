@@ -64,6 +64,3 @@ def paint_wizard(room_size):
     elif price_dulux < price_cheapo and price_dulux < price_average_joes:
         least_waste = "Dulux will be cheapest"
     return cheapest + " & " + least_waste
-
-
-print(paint_wizard(54))
