@@ -4,24 +4,30 @@
 
 
 def is_it_prime(num):
-    for j in range(2, num + 1):
+
+    count = 0
+
+    for j in range(2, num):
         if num % j == 0:
-            return 1
-        else:
-            return 0
+            count += 1
+        if count > 0:
+            break
+    return count
 
 
-def how_many_prime():
+def find_prime_numbers():
 
     prime_count = 0
 
     for i in range(2, 2000000001):
-        count = 0
-        count += is_it_prime(i)
-        if count == 0:
+
+        prime_binary = is_it_prime(i)
+
+        if prime_binary == 0:
             prime_count += 1
+
     print(prime_count)
     return prime_count
 
 
-how_many_prime()
+find_prime_numbers()
