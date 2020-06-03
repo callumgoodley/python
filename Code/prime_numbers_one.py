@@ -18,7 +18,7 @@ def find_prime_numbers():
 
     prime_count = 0
 
-    for i in range(2, 10001):
+    for i in range(2, 3000001):
 
         prime_binary = is_it_prime(i)
 
